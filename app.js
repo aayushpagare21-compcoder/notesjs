@@ -1,5 +1,5 @@
-//adding and displaying notes 
-showNotes(); 
+//code for mobilenav  
+showNotes();  
 let addBtn = document.getElementById('addBtn');
 
 addBtn.addEventListener('click', function (e) {
@@ -80,4 +80,10 @@ searchbar.addEventListener('input', function(){
             element.style.display = 'none';
         }
     })
+});
+
+let hamburgerIcon = document.querySelector('.nav-trigger'); 
+hamburgerIcon.addEventListener('click', function(){ 
+    let siteContent = document.querySelector('.site-content-wrapper'); 
+    siteContent.classList.toggle('scaled');
 });
