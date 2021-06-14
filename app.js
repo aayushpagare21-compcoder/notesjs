@@ -81,9 +81,3 @@ searchbar.addEventListener('input', function(){
         }
     })
 });
-
-let hamburgerIcon = document.querySelector('.nav-trigger'); 
-hamburgerIcon.addEventListener('click', function(){ 
-    let siteContent = document.querySelector('.site-content-wrapper'); 
-    siteContent.classList.toggle('scaled');
-});

@@ -14,149 +14,129 @@
 </head>
 
 <body>
-    <div class="main-wrapper">
-        <div class="nav-background">
-            <ul class="nav-list">
-                <img src="./icons/logo2.png" alt="">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#aboutUs">ABOUTUS</a></li>
-                <li><a href="#contact-us">CONTACT</a></li>
-                <li><a href="#Feedback">FEEDBACK</a></li>
-                <li><input type="search" id="searchBar" placeholder="SEARCH NOTES"></li>
-            </ul>
-        </div>
-        <div class="site-content-wrapper">
-            <div class="nav-trigger">
-                <img class="icon" src="./icons/hamburger.png" alt=""> 
+    <div class="container">
+        <div class="navbar">
+            <div class="left">
+                <div class="image">
+                    <img src="./icons/logo2.png" alt="" class="logo">
+                </div>
+                <div class="navmenu">
+                    <span><a href="#">HOME</a></span>
+                    <span><a href="#aboutUs">ABOUT</a></span>
+                    <span><a href="#contact-us">CONTACT</a></span>
+                    <span><a href="#Feedback">FEEDBACK</a></span>
+                </div>
             </div>
-            <div class="site-content">
-                <div class="container">
-                    <div class="navbar">
-                        <div class="left">
-                            <div class="image">
-                                <img src="./icons/logo2.png" alt="" class="logo">
-                            </div>
-                            <div class="navmenu">
-                                <span><a href="#">HOME</a></span>
-                                <span><a href="#aboutUs">ABOUT</a></span>
-                                <span><a href="#contact-us">CONTACT</a></span>
-                                <span><a href="#Feedback">FEEDBACK</a></span>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="searchbar">
-                                <input type="search" id="searchBar" placeholder="SEARCH NOTES">
-                            </div>
-                            <div class="searchbtn">
-                                <button class="btn"><img src="./icons/search-1.png" alt=""></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <section>
-                        <div class="inputNotes">
-                            <div class="heroImage">
-                                <img src="./images/hero4.jpg" alt="">
-                            </div>
-                            <div class="heroText">
-                                <h1><span>HOW</span> TO USE : </h1>
-
-                                <div class="information">
-                                    <ul>
-                                        <li>TYPE YOUR NOTES IN NOTE SECTION</li>
-                                        <li>CLICK ON THE ADD-NOTE BUTTON</li>
-                                        <li id="new">YOU CAN DELETE NOTE BY CLICKING DELETE-NOTE BUTTON</li>
-                                        <li>SEARCH YOUR NOTES BY KEYWORDS IN THE SEARCH-BAR</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="typenotes">
-                            <div class="text">
-                                <textarea name="" id="addTxt" cols="100" rows="10"
-                                    placeholder="ADD YOUR NOTE HERE"></textarea>
-                            </div>
-                            <div class="addNote">
-                                <button id="addBtn"><span>ADD NOTE</span></button>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="displayNotes" id="displayNotes">
-                            <h1>YOUR <span> NOTES</span></h1>
-                            <div class="card-wrapper" id="card-wrapper">
-                                <!-- code will be inserted dynamically -->
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="aboutUs">
-                        <div class="aboutUs">
-                            <h1>ABOUT THE <span>DEVELOPER</span></h1>
-                            <div class="aboutUsWrapper">
-                                <div class="image">
-                                    <img src="./images/aayush2.jpeg" alt="">
-                                </div>
-                                <div class="text">
-                                    <h3>AAYUSH <span>PAGARE</span></h3>
-                                    <p>HEY I AM AAYUSH, I AM CURRENTLY STUDYING COMPUTER SCIENCE AND ENGINEERING FROM
-                                        <span>GUJARAT
-                                            TECHNOLOGICAL UNIVERSITY. </span> I AM A <span>COMPETITIVE PROGRAMMER(3 STAR
-                                            LEETCODE),
-                                            A
-                                            FULL-STACK WEB-DEVELOPER(MERN STACK), A QUICK LEARNER AND A TEAM
-                                            PLAYER.</span>
-                                    </p>
-                                    <div id="contact-us" class="contactUs">
-                                        <div class="icons">
-                                            <div class="leetcode">
-                                                <a href="https://leetcode.com/aayush21/"><img src="./icons/leetcode.png"
-                                                        alt="" srcset=""></a>
-                                            </div>
-                                            <div class="github">
-                                                <a href="https://github.com/aayushpagare21-compcoder"><img
-                                                        src="./icons/github.png" alt="" srcset=""></a>
-                                            </div>
-                                            <div class="linkden">
-                                                <a href="https://www.linkedin.com/in/aayush-pagare-5817a81aa/"><img
-                                                        src="./icons/linkden.png" alt=""></a>
-                                            </div>
-                                            <div class="gmail">
-                                                <a href=" mailto:aayushpagare21@gmail.com"> <img src="./icons/gmail.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="Feedback" class="Feedback">
-                                <h1>FEEDBACK FORM</h1>
-                                <p>" YOUR FEEDBACK MATTERS TO US :) "</p>
-                                <form action="">
-                                    <div class="forms">
-                                        <input type="text" placeholder="NAME">
-                                        <input type="email" name="" id="" placeholder="EMAIL">
-                                        <textarea name="" id="" cols="30" rows="10"
-                                            placeholder="WRITE YOUR FEEDBACK HERE"></textarea>
-                                        <input id="submit" type="submit" value="SUBMIT">
-                                    </div>
-                                </form>
-                                <span>
-                                    <marquee behavior="" direction="">CREATED BY AAYUSH PAGARE &#169 : ALL RIGHTS
-                                        RESERVED</marquee>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
+            <div class="right">
+                <div class="searchbar">
+                    <input type="search" id="searchBar" placeholder="SEARCH NOTES">
+                </div>
+                <div class="searchbtn">
+                    <button class="btn"><img src="./icons/search-1.png" alt=""></button>
                 </div>
             </div>
         </div>
+
+        <section>
+            <div class="inputNotes">
+                <div class="heroImage">
+                    <img src="./images/hero4.jpg" alt="">
+                </div>
+                <div class="heroText">
+                    <h1><span>HOW</span> TO USE : </h1>
+
+                    <div class="information">
+                        <ul>
+                            <li>TYPE YOUR NOTES IN NOTE SECTION</li>
+                            <li>CLICK ON THE ADD-NOTE BUTTON</li>
+                            <li id="new">YOU CAN DELETE NOTE BY CLICKING DELETE-NOTE BUTTON</li>
+                            <li>SEARCH YOUR NOTES BY KEYWORDS IN THE SEARCH-BAR</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="typenotes">
+                <div class="text">
+                    <textarea name="" id="addTxt" cols="100" rows="10" placeholder="ADD YOUR NOTE HERE"></textarea>
+                </div>
+                <div class="addNote">
+                    <button id="addBtn"><span>ADD NOTE</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="displayNotes" id="displayNotes">
+                <h1>YOUR <span> NOTES</span></h1>
+                <div class="card-wrapper" id="card-wrapper">
+                    <!-- code will be inserted dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutUs">
+            <div class="aboutUs">
+                <h1>ABOUT THE <span>DEVELOPER</span></h1>
+                <div class="aboutUsWrapper">
+                    <div class="image">
+                        <img src="./images/aayush2.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>AAYUSH <span>PAGARE</span></h3>
+                        <p>HEY I AM AAYUSH, I AM CURRENTLY STUDYING COMPUTER SCIENCE AND ENGINEERING FROM
+                            <span>GUJARAT
+                                TECHNOLOGICAL UNIVERSITY. </span> I AM A <span>COMPETITIVE PROGRAMMER(3 STAR
+                                LEETCODE),
+                                A
+                                FULL-STACK WEB-DEVELOPER(MERN STACK), A QUICK LEARNER AND A TEAM
+                                PLAYER.</span>
+                        </p>
+                        <div id="contact-us" class="contactUs">
+                            <div class="icons">
+                                <div class="leetcode">
+                                    <a href="https://leetcode.com/aayush21/"><img src="./icons/leetcode.png" alt=""
+                                            srcset=""></a>
+                                </div>
+                                <div class="github">
+                                    <a href="https://github.com/aayushpagare21-compcoder"><img src="./icons/github.png"
+                                            alt="" srcset=""></a>
+                                </div>
+                                <div class="linkden">
+                                    <a href="https://www.linkedin.com/in/aayush-pagare-5817a81aa/"><img
+                                            src="./icons/linkden.png" alt=""></a>
+                                </div>
+                                <div class="gmail">
+                                    <a href=" mailto:aayushpagare21@gmail.com"> <img src="./icons/gmail.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Feedback" class="Feedback">
+                    <h1>FEEDBACK FORM</h1>
+                    <p>" YOUR FEEDBACK MATTERS TO US :) "</p>
+                    <form action="">
+                        <div class="forms">
+                            <input type="text" placeholder="NAME">
+                            <input type="email" name="" id="" placeholder="EMAIL">
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="WRITE YOUR FEEDBACK HERE"></textarea>
+                            <input id="submit" type="submit" value="SUBMIT">
+                        </div>
+                    </form>
+                    <span>
+                        <marquee behavior="" direction="">CREATED BY AAYUSH PAGARE &#169 : ALL RIGHTS
+                            RESERVED</marquee>
+                    </span>
+                </div>
+            </div>
+        </section>
     </div>
+
 </body>
 
 <script src="app.js"></script>
